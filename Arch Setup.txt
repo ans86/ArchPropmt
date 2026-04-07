@@ -1,37 +1,94 @@
-I am setting up Arch Linux with Hyprland on HP ProBook 640 G2 
-(Intel i5-6300U, Intel HD 520, 16GB RAM, 238GB SSD + 500GB HDD).
+You are a Linux expert specializing in Arch Linux, Hyprland, 
+and developer productivity environments.
 
-## What is done so far:
-- Arch Linux installed via archinstall
-- linux-lts kernel
-- btrfs filesystem with compression
-- sddm greeter
-- Hyprland installed and working (GUI launched)
-- Firefox installed and working
-- yay (AUR helper) installed
-- Installed: waybar, kitty, wofi, mako, hyprlock, hypridle, 
-  thunar, polkit-kde-agent, hyprpaper, cliphist, pipewire, 
-  networkmanager
+## My System:
+- Laptop: HP ProBook 640 G2
+- CPU: Intel i5-6300U
+- GPU: Intel HD Graphics 520 (integrated)
+- RAM: 16GB
+- Storage: 238GB SSD (Arch installed) + 500GB HDD (data)
+- Display: 1366x768
 
-## Current problems:
-- HDD (500GB) not mounted, need to access files from it
-- Missing: proper wallpaper, waybar not showing, 
-  notification daemon not running
-- No dotfiles configured yet
-- Need complete Hyprland rice/setup for programming
+## Current Status - What is DONE:
 
-## What I need:
-1. First: mount my 500GB HDD to access saved passwords
-2. Then: complete Hyprland setup with ready-made dotfiles
-3. Clean minimal dark theme (like macOS + tiling WM)
-4. Setup for web dev, Python, C++ programming
-5. Apps needed: Chrome, VLC, VS Code, file manager
+### Base System:
+- Arch Linux installed via archinstall (archinstall TUI)
+- Kernel: linux-lts
+- Filesystem: btrfs with compression enabled
+- Swap: zram with zstd compression
+- Bootloader: working
+- User: "arch" (with sudo)
+- Greeter: sddm (enabled and working)
+- Hyprland GUI launched successfully
 
-## User info:
-- Username: arch
-- Beginner level Linux user
-- Wants step by step guidance
-- Prefer copy-paste friendly commands
+### Installed Packages:
+```bash
+# Core
+sudo pacman -S hyprland waybar kitty wofi mako hyprlock hypridle
 
-Please guide step by step, wait for my confirmation before 
-each next step.
+# Portal & Qt
+sudo pacman -S xdg-desktop-portal-hyprland polkit-kde-agent 
+qt5-wayland qt6-wayland
+
+# Audio
+sudo pacman -S pipewire pipewire-pulse wireplumber
+
+# Network
+sudo pacman -S networkmanager nm-connection-editor
+
+# Apps
+sudo pacman -S firefox thunar hyprpaper cliphist
+
+# AUR Helper
+yay installed successfully
+
+# Greeter
+yay -S ly (failed)
+sudo pacman -S sddm (working)
+```
+
+### Hyprland Config (~/.config/hypr/hyprland.conf):
+Added these exec-once lines:
+exec-once = /usr/lib/polkit-kde-authentication-agent-1
+exec-once = hyprpaper
+exec-once = wl-paste --type text --watch cliphist store
+exec-once = wl-paste --type image --watch cliphist store
+
+### Current Problems:
+1. 500GB HDD not mounted (need files from it)
+2. Waybar not showing properly
+3. No proper dotfiles configured
+4. No wallpaper set properly
+5. Notifications not working
+6. No proper keybindings configured
+
+## What I Need Next (In Order):
+
+1. Mount 500GB HDD to access my files
+2. Complete Hyprland dotfiles setup (ready-made, beginner friendly)
+3. Recommended dotfiles repo: JaKooLit or similar
+4. Clean minimal dark theme (macOS + tiling WM style)
+5. Install remaining apps:
+   - Google Chrome
+   - VLC
+   - VS Code
+   - Neovim
+   - zsh + starship prompt
+   - Git + CLI tools
+6. Waybar proper configuration
+7. Screenshot tool (grim + slurp)
+8. Complete keybindings setup
+9. Performance tweaks for Intel iGPU
+10. Battery optimization
+
+## Important Notes:
+- I am a BEGINNER - explain each step simply
+- Wait for my confirmation before next step
+- Provide copy-paste friendly commands
+- Prefer stability over experimental configs
+- Step by step, one thing at a time
+- I will confirm "done" after each step
+
+Please start with Step 1: Mounting the 500GB HDD.
+Run this first and share output:
+lsblk
