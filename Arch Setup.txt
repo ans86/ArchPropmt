@@ -1,0 +1,37 @@
+I am setting up Arch Linux with Hyprland on HP ProBook 640 G2 
+(Intel i5-6300U, Intel HD 520, 16GB RAM, 238GB SSD + 500GB HDD).
+
+## What is done so far:
+- Arch Linux installed via archinstall
+- linux-lts kernel
+- btrfs filesystem with compression
+- sddm greeter
+- Hyprland installed and working (GUI launched)
+- Firefox installed and working
+- yay (AUR helper) installed
+- Installed: waybar, kitty, wofi, mako, hyprlock, hypridle, 
+  thunar, polkit-kde-agent, hyprpaper, cliphist, pipewire, 
+  networkmanager
+
+## Current problems:
+- HDD (500GB) not mounted, need to access files from it
+- Missing: proper wallpaper, waybar not showing, 
+  notification daemon not running
+- No dotfiles configured yet
+- Need complete Hyprland rice/setup for programming
+
+## What I need:
+1. First: mount my 500GB HDD to access saved passwords
+2. Then: complete Hyprland setup with ready-made dotfiles
+3. Clean minimal dark theme (like macOS + tiling WM)
+4. Setup for web dev, Python, C++ programming
+5. Apps needed: Chrome, VLC, VS Code, file manager
+
+## User info:
+- Username: arch
+- Beginner level Linux user
+- Wants step by step guidance
+- Prefer copy-paste friendly commands
+
+Please guide step by step, wait for my confirmation before 
+each next step.
