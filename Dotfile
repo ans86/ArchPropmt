@@ -1,0 +1,29 @@
+I am on Arch Linux with Hyprland. I want to apply this dotfiles repo on my system: https://github.com/NischalDawadi/Hyprlust/
+My system details:
+
+HP ProBook 640 G2, Intel i5-6300U, Intel HD Graphics 520 (iGPU)
+16GB RAM, 1366x768 display, linux-lts kernel
+btrfs + zram+zstd, SDDM, Pipewire, NetworkManager, UFW
+
+Already installed: Hyprland, Kitty, Firefox, Waybar, Mako, Wofi, Hyprpaper, xdg-desktop-portal-hyprland, yay (AUR helper)
+This dotfiles repo was made for Fedora — so help me apply it on Arch Linux correctly, converting any Fedora-specific things to Arch equivalents.
+I want:
+
+Vaporwave aesthetic (Pink #ff79c6 + Cyan #80ffea on dark background)
+Glassmorphism (blurred transparent windows) — lightweight, low iterations
+Rounded corners
+Minimal dark Waybar on top
+Kitty with transparency and blur
+Fastfetch with anime ASCII art
+Intel iGPU optimized config
+1366x768 resolution adjusted
+
+Rules:
+
+One step at a time
+Wait for my "done" before next step
+Copy-paste friendly commands
+Brief beginner-friendly explanations
+Prefer pacman over AUR when possible
+
+Start by cloning the dotfiles repo and listing what packages need to be installed.
