@@ -1,0 +1,23 @@
+I am on Arch Linux with Hyprland running. I currently have this dotfiles config applied: https://github.com/hayyaoe/zenities — I want to REMOVE it completely and install JaKooLit's Arch-Hyprland config instead: https://github.com/JaKooLit/Arch-Hyprland
+My system:
+
+HP ProBook 640 G2, Intel i5-6300U, Intel HD Graphics 520 (iGPU only — NO nvidia)
+16GB RAM, 1366x768 display, linux-lts kernel
+btrfs, zram+zstd, SDDM, Pipewire, NetworkManager, yay installed
+
+Steps I need:
+
+First safely remove/backup the current zenities dotfiles from ~/.config/
+Then clone and run JaKooLit Arch-Hyprland installer
+During installer options — tell me exactly what to select (I have Intel iGPU, no nvidia, no ROG laptop)
+After install — verify everything works
+
+Rules:
+
+One step at a time, wait for my "done"
+Copy-paste friendly commands
+Beginner friendly, brief explanations
+Lightweight setup — skip bloat, skip ROG, skip Pokemon themes
+
+Start with step 1 — removing zenities config safely.
+  
