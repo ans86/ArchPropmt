@@ -1,0 +1,12 @@
+I am on Arch Linux with Hyprland. My system: HP ProBook 640 G2, Intel i5-6300U, Intel HD Graphics 520 (iGPU), 16GB RAM, 1366x768 display, linux-lts kernel, btrfs, zram+zstd.
+I want to set up a beautiful Hyprland rice with Vaporwave aesthetic — Pink (#ff79c6) + Cyan (#80ffea) on dark background, glassmorphism (blurred transparent windows), rounded corners, minimal dark Waybar on top.
+Already installed: Hyprland, Kitty, Firefox, Waybar, Mako, Wofi, Hyprpaper, xdg-desktop-portal-hyprland, Pipewire, NetworkManager.
+I need you to research and recommend the BEST pre-made Hyprland dotfiles/config that I can use as a base. Requirements:
+
+Vaporwave or dark aesthetic (pink/cyan colors)
+Lightweight (works on Intel iGPU, no heavy GPU)
+Compatible with 1366x768 resolution
+Active maintenance on GitHub
+Easy to install for beginners
+
+Compare top options (like ML4W, end-4/dots-hyprland, prasanthrangan/hyprdots, etc) and recommend ONE best option with installation steps. One step at a time, wait for my "done" confirmation.
